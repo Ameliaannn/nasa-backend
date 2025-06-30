@@ -22,8 +22,7 @@ app.use('/api', nasaRouter);
 app.use('/api/mars', marsRouter);
 app.use('/api/epic', epicRouter);
 app.use('/api', asteroidRouter);
-// users
-app.get('/api/users', userController.getUsers);
+
 
 // listen 5000
 app.listen(5000, () => {
