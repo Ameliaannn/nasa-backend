@@ -6,7 +6,7 @@ app.use(cors());
 //const db = require('./util/dbconfig');
 
 // import user cntroller
-const userController = require('./controllers/userController');
+//const userController = require('./controllers/userController');
 
 //import nasa api
 const nasaRouter = require('./routes/nasaRouter');
