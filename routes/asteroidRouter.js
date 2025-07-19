@@ -12,14 +12,14 @@ router.get('/', async(req, res) => {
     try {
         const result = await pool.query(
             `SELECT
-        id AS neo_id,
-        name,
-        magnitude,
-        is_hazardous,
-        TO_CHAR(approach_date, 'YYYY-MM-DD') AS approach_date
-       FROM asteroids
-       WHERE approach_date = $1
-       ORDER BY magnitude ASC`, [date]
+  neo_id,
+  name,
+  magnitude,
+  is_hazardous,
+  TO_CHAR(approach_date, 'YYYY-MM-DD') AS approach_date
+FROM asteroids
+WHERE approach_date = $1
+ORDER BY magnitude ASC`, [date]
         );
         console.log('Fetching from DATABASE!');
 
